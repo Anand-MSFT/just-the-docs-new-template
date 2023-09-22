@@ -14,7 +14,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+  <link rel="stylesheet" href="{{ "/assets/css/just-the-docs-default.css?v=" | append: site.github.build_revision  | relative_url }}">
   
   {% include head_nav.html %}
 
@@ -33,10 +33,10 @@
   {% endif %}
 
   {% if site.search_enabled != false %}
-    <script src="{{ './assets/js/vendor/lunr.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
   {% endif %}
 
-  <script src="{{ './assets/js/just-the-docs.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
